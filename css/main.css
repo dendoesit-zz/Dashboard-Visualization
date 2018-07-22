@@ -141,9 +141,7 @@ a {
 }
 a:hover{
     color:dodgerblue;
-    text-decoration:underline;
-    font-size:110%;
-    
+    border-bottom:2px solid dodgerblue;
 }
 
 
