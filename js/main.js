@@ -5,12 +5,10 @@ fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/results
   .then(response => response.json())
     .then(data => {
      successfulData = data;
-         console.log(data.length);
     var i;
     for( i=0;  i < data.length; i++){
         data[i].Duration = Math.round(data[i].duration/(3600*24)) + " days"
         data[i].Success = Math.round(data[i].pledged / (data[i].duration / (3600*24)))
-        console.log(data[i])
     }
     // Here's a list of successful projects!
    createTabel(data);
@@ -20,16 +18,16 @@ fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/results
 function createTabel(data) {
     $("#example-table").tabulator({
             data:data,
-            layout:"fitData",
+            layout:"fitDataFill",
     //set initial table data
 
       columns:[
         {title:"Name", field:"project name", sortable:true, width:400},  
         {title:"Goal", field:"goal",formatter:"money", sortable:true,formatterParams:{symbol:"£",precision:"0"},  sorter:"number"},
         {title:"Gathered", field:"pledged",formatter:"money",formatterParams:{symbol:"£",precision:"0"},  sorter:"number"},
+       {title:"Category", field:"category", sortable:true},
         {title:"City", field:"city", sortable:true},
         {title:"Creator", field:"creator", sortable:true},
-        {title:"Duration", field:"Duration", sortable:true},
         {title:"Success - £/day", field:"Success", sortable:true},
       ],
         rowFormatter: function(row){
@@ -74,74 +72,107 @@ function createTabel(data) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
-    }
-    
-    CityList = {};
-    var object = [];
-    function getData(){
-        console.log(object);
-        tableData.forEach(function(i){
-            getCoords(i.city);
-        })
-        setTimeout(function() {
-        }, 1000);
-    };
-    
-	getData();
+    } 
+}
 
-    function getCoords(name){
-        $.get("http://maps.googleapis.com/maps/api/geocode/json?address="+name+"&sensor=false", function(data){
-			if (data.results) {
-				//if the same coordinates occur, increase count
-				var coords = data.results[0].geometry.location.lat + ', ' + data.results[0].geometry.location.lng
-				if (coords in CityList){
-					CityList[coords] += 1;
-				} else {
-					CityList[coords] = 1;
-				}
-			}
-            object = createDataForHeatMap(CityList)
-        })
-    }
-    
-    function createDataForHeatMap(cityList) {
-        var dataHM = []
-        for (var coords in cityList) {
-            var lat = coords.split(', ')[0]
-            var long = coords.split(', ')[1]
-            dataHM.push({lat: lat, lng : long, count: cityList[coords]})
-        }
-        return dataHM;
-    }
-    
-    function getCities(){
-            object = createDataForHeatMap(citylist);
-        };
-    function myMap() {
-		
-		setTimeout(function() {
-			var map = new google.maps.Map(document.getElementById('map'), {
-			  zoom: 5,
-			  center: {lat: 51.508742, lng: -0.120850}
-			});
+fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/indie.json')
+  .then(response => response.json())
+    .then(data => {
+    // Here's a list of successful projects!
+    indieData = data;
+        console.log(indieData);
 
-			// Construct the circle for each value in citymap.
-			// Note: We scale the area of the circle based on the population.
-			for (var i in object) {
-				var city = object[i]
-				// console.log(city.lat + " " + city.lng + " " + city.count)
-				// Add the circle for this city to the map.
-				var cityCircle = new google.maps.Circle({
-					strokeColor: '#FF0000',
-					strokeOpacity: 0.8,
-					strokeWeight: 2,
-					fillColor: '#FF0000',
-					fillOpacity: 0.35,
-					map: map,
-					center: new google.maps.LatLng(city.lat, city.lng),
-					radius: Math.sqrt(city.count) * 10000
-				});
-			}
-        }, 1000);
-    }
-	setTimeout(myMap(), 2000);
+   createIndieTabel(indieData);
+});
+    
+function createIndieTabel(indieData) {
+    $("#indie-table").tabulator({
+            data:indieData,
+            layout:"fitDataFill",
+    //set initial table data
+
+      columns:[
+        {title:"Name", field:"project name", sortable:true, width:400},  
+        {title:"Gathered", field:"goal",formatter:"money", sortable:true,formatterParams:{symbol:"£",precision:"0"},  sorter:"number"},
+        {title:"Goal", field:"pledged %", sorter:"number"},
+         {title:"Category", field:"category", sortable:true}
+ 
+      ],
+        rowClick:function(e, row, data){
+            var data = row.getData();
+            if (confirm('You are about to acces the Kickstarter page for this project, Are you sure ?')) {
+                 location.href="http://indiegogo.com/"+data.Link;
+            }
+        },
+    })
+};
+    
+//    CityList = {};
+//    var object = [];
+//    function getData(){
+//        console.log(object);
+//        tableData.forEach(function(i){
+//            getCoords(i.city);
+//        })
+//        setTimeout(function() {
+//        }, 1000);
+//    };
+//    
+//	getData();
+//
+//    function getCoords(name){
+//        $.get("http://maps.googleapis.com/maps/api/geocode/json?address="+name+"&sensor=false", function(data){
+//			if (data.results) {
+//				//if the same coordinates occur, increase count
+//				var coords = data.results[0].geometry.location.lat + ', ' + data.results[0].geometry.location.lng
+//				if (coords in CityList){
+//					CityList[coords] += 1;
+//				} else {
+//					CityList[coords] = 1;
+//				}
+//			}
+//            object = createDataForHeatMap(CityList)
+//        })
+//    }
+//    
+//    function createDataForHeatMap(cityList) {
+//        var dataHM = []
+//        for (var coords in cityList) {
+//            var lat = coords.split(', ')[0]
+//            var long = coords.split(', ')[1]
+//            dataHM.push({lat: lat, lng : long, count: cityList[coords]})
+//        }
+//        return dataHM;
+//    }
+//    
+//    function getCities(){
+//            object = createDataForHeatMap(citylist);
+//        };
+//    function myMap() {
+//		
+//		setTimeout(function() {
+//			var map = new google.maps.Map(document.getElementById('map'), {
+//			  zoom: 5,
+//			  center: {lat: 51.508742, lng: -0.120850}
+//			});
+//
+//			// Construct the circle for each value in citymap.
+//			// Note: We scale the area of the circle based on the population.
+//			for (var i in object) {
+//				var city = object[i]
+//				// console.log(city.lat + " " + city.lng + " " + city.count)
+//				// Add the circle for this city to the map.
+//				var cityCircle = new google.maps.Circle({
+//					strokeColor: '#FF0000',
+//					strokeOpacity: 0.8,
+//					strokeWeight: 2,
+//					fillColor: '#FF0000',
+//					fillOpacity: 0.35,
+//					map: map,
+//					center: new google.maps.LatLng(city.lat, city.lng),
+//					radius: Math.sqrt(city.count) * 10000
+//				});
+//			}
+//        }, 1000);
+//    }
+//	setTimeout(myMap(), 2000);

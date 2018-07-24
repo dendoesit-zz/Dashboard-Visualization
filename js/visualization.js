@@ -1,54 +1,52 @@
-tableData = [{"goal": 110000, "pledged": 114976, "project name": "Sondheim 85th birthday gala at Theatre Royal Drury Lane", "city": "London", "country": "GB", "creator": "Sondheim 85th Birthday Gala", "category": "Musical", "backers": 334, "Link": "https://www.kickstarter.com/projects/281141563/sondheim-85th-birthday-gala-at-theatre-royal-drury?ref=category"}, {"goal": 100000, "pledged": 111194, "project name": "doppel - performance-enhancing wearable technology", "city": "London", "country": "GB", "creator": "Team Turquoise", "category": "Wearables", "backers": 820, "Link": "https://www.kickstarter.com/projects/1799505246/doppel-a-new-breed-of-wearable-technology-to-set-y?ref=category"}, {"goal": 600000, "pledged": 672447.28, "project name": "LUNAR MISSION ONE: A new lunar mission for everyone.", "city": "London", "country": "GB", "creator": "Lunar Missions Ltd", "category": "Space Exploration", "backers": 7297, "Link": "https://www.kickstarter.com/projects/lunarmissionone/lunar-mission-one-a-new-lunar-mission-for-everyone?ref=category"}, {"goal": 100000, "pledged": 177277, "project name": "Flare Audio - a revolution in pure sound IEM earphones", "city": "Brighton and Hove City", "country": "GB", "creator": "Flare Audio", "category": "Sound", "backers": 1260, "Link": "https://www.kickstarter.com/projects/584645150/flare-audio-a-revolution-in-pure-sound?ref=category"}, {"goal": 350000, "pledged": 493795.42, "project name": "Next Generation LiveCode (Open Source)", "city": "Edinburgh", "country": "GB", "creator": "RunRev Ltd", "category": "Software", "backers": 3342, "Link": "https://www.kickstarter.com/projects/1755283828/open-source-edition-of-livecode?ref=category"}, {"goal": 100000, "pledged": 114368.2, "project name": "Brewbot: The Smart Brewing Appliance", "city": "Belfast", "country": "GB", "creator": "Cargo", "category": "Hardware", "backers": 381, "Link": "https://www.kickstarter.com/projects/cargo/brewbot-the-smart-brewing-appliance?ref=category"}, {"goal": 100000, "pledged": 116930, "project name": "AuraVisor: the future of VR is wire free. the future is now.", "city": "North Yorkshire", "country": "GB", "creator": "James Talbot", "category": "Hardware", "backers": 684, "Link": "https://www.kickstarter.com/projects/1714346163/auravisor-virtual-reality-head-mounted-computer?ref=category"}, {"goal": 100000, "pledged": 282048, "project name": "Realiser A16: real 3D audio headphone processor", "city": "Bangor", "country": "GB", "creator": "Smyth Research", "category": "Hardware", "backers": 330, "Link": "https://www.kickstarter.com/projects/1959366850/realiser-a16-real-3d-audio-headphone-processor?ref=category"}, {"goal": 100000, "pledged": 113555.38, "project name": "Hookpod - Saving the Albatross from Extinction", "city": "Devon", "country": "GB", "creator": "Becky Ingham", "category": "Gadgets", "backers": 649, "Link": "https://www.kickstarter.com/projects/hookpod/hookpod-saving-the-albatross-from-extinction?ref=category"}, {"goal": 100000, "pledged": 280891, "project name": "Robox : Desktop 3D Printer and Micro-Manufacturing Platform", "city": "Portishead", "country": "GB", "creator": "C Enterprise (UK) Ltd.", "category": "3D Printing", "backers": 435, "Link": "https://www.kickstarter.com/projects/robox/robox-desktop-3d-printer-and-micro-manufacturing-p?ref=category"}, {"goal": 175000, "pledged": 2090104.1, "project name": "Yooka-Laylee - A 3D Platformer Rare-vival!", "city": "Derby", "country": "GB", "creator": "Playtonic Games", "category": "Video Games", "backers": 73206, "Link": "https://www.kickstarter.com/projects/playtonic/yooka-laylee-a-3d-platformer-rare-vival?ref=category"}, {"goal": 100042, "pledged": 140481.1, "project name": "Maia", "city": "Oxford", "country": "GB", "creator": "Simon Roth", "category": "Video Games", "backers": 8115, "Link": "https://www.kickstarter.com/projects/simonroth/maia?ref=category"}, {"goal": 150000, "pledged": 160055.85, "project name": "Sui Generis", "city": "London", "country": "GB", "creator": "Bare Mettle Entertainment", "category": "Video Games", "backers": 6931, "Link": "https://www.kickstarter.com/projects/1473965863/sui-generis?ref=category"}, {"goal": 450000, "pledged": 526563.49, "project name": "Project GODUS", "city": "Guildford", "country": "GB", "creator": "22cans", "category": "Video Games", "backers": 17184, "Link": "https://www.kickstarter.com/projects/22cans/project-godus?ref=category"}, {"goal": 1250000, "pledged": 1578316.08, "project name": "Elite: Dangerous", "city": "Cambridge", "country": "GB", "creator": "Frontier Developments", "category": "Video Games", "backers": 25681, "Link": "https://www.kickstarter.com/projects/1461411552/elite-dangerous?ref=category"}, {"goal": 100000, "pledged": 317281.67, "project name": "Battalion 1944 (PC/XB1/PS4)", "city": "Derby", "country": "GB", "creator": "Bulkhead Interactive", "category": "Video Games", "backers": 10096, "Link": "https://www.kickstarter.com/projects/bulkheadinteractive/battalion-1944-pc-xb1-ps4?ref=category"}, {"goal": 100000, "pledged": 126447.64, "project name": "Knights and Bikes", "city": "London", "country": "GB", "creator": "Foam Sword", "category": "Video Games", "backers": 4796, "Link": "https://www.kickstarter.com/projects/foamsword/knights-and-bikes?ref=category"},  {"goal": 150000, "pledged": 211371.5, "project name": "War for the Overworld", "city": "Brighton and Hove City", "country": "GB", "creator": "Subterranean Games", "category": "Video Games", "backers": 8351, "Link": "https://www.kickstarter.com/projects/subterraneangames/war-for-the-overworld?ref=category"}, {"goal": 100000, "pledged": 100425, "project name": "MMA Federation", "city": "London", "country": "GB", "creator": "Mixed Martial Mobile, Ltd.", "category": "Video Games", "backers": 159, "Link": "https://www.kickstarter.com/projects/186837350/mma-federation?ref=category"}, {"goal": 150000, "pledged": 168360.43, "project name": "Fabulous Beasts - a new kind of game", "city": "London", "country": "GB", "creator": "Sensible Object", "category": "Tabletop Games", "backers": 2224, "Link": "https://www.kickstarter.com/projects/sensibleobject/fabulous-beasts-a-new-kind-of-game?ref=category"}, {"goal": 100000, "pledged": 102334, "project name": "Fine dining restaurant with a relaxed atmosphere", "city": "Warwickshire", "country": "GB", "creator": "Paul Foster", "category": "Restaurants", "backers": 605, "Link": "https://www.kickstarter.com/projects/712997218/fine-dining-restaurant-with-a-relaxed-atmosphere?ref=category"}, {"goal": 100000, "pledged": 103915, "project name": "Burnt Truffle from the team behind Sticky Walnut", "city": "Hoole", "country": "GB", "creator": "Gary Usher", "category": "Restaurants", "backers": 891, "Link": "https://www.kickstarter.com/projects/1158079571/burnt-truffle-from-the-team-behind-sticky-walnut?ref=category"}, {"goal": 100000, "pledged": 100358.5, "project name": "BO66Y THE MOVIE - The Bobby Moore documentary", "city": "London", "country": "GB", "creator": "Matthew Lorenzo", "category": "Documentary", "backers": 352, "Link": "https://www.kickstarter.com/projects/1380759248/bo66y-the-movie-the-bobby-moore-documentary?ref=category"}, {"goal": 100000, "pledged": 114000, "project name": "BREXIT THE MOVIE", "city": "London", "country": "GB", "creator": "Brexit The Movie", "category": "Documentary", "backers": 1685, "Link": "https://www.kickstarter.com/projects/brexitthemovie/brexit-the-movie?ref=category"}, {"goal": 100000, "pledged": 107403.69, "project name": "As It Occurs To Me", "city": "London", "country": "GB", "creator": "Richard Herring", "category": "Comedy", "backers": 3736, "Link": "https://www.kickstarter.com/projects/467836598/as-it-occurs-to-me?ref=category"}, {"goal": 100000, "pledged": 107684, "project name": "Adaptalux: An Adaptable Miniature Lighting Studio", "city": "London", "country": "GB", "creator": "Adaptalux Ltd.", "category": "Product Design", "backers": 540, "Link": "https://www.kickstarter.com/projects/1447024032/adaptalux-an-adaptable-miniature-lighting-studio?ref=category"}, {"goal": 380000, "pledged": 383623, "project name": "The Barisieur: Designer Coffee & Tea Alarm Clock", "city": "London", "country": "GB", "creator": "Barisieur Ltd.", "category": "Product Design", "backers": 1186, "Link": "https://www.kickstarter.com/projects/393281213/the-barisieur-designer-coffee-and-tea-alarm-clock?ref=category"}, {"goal": 100000, "pledged": 107950, "project name": "The Vamp Stereo + Speaker \u00e2\u20ac\u201c Bring Back The Sound", "city": "London", "country": "GB", "creator": "Paul Cocksedge + Paul Cocksedge Studio\u00e2\u201e\u00a2", "category": "Product Design", "backers": 1771, "Link": "https://www.kickstarter.com/projects/1238747394/the-vamp-stereo-speaker-bring-back-the-sound?ref=category"}, {"goal": 175000, "pledged": 340141.59, "project name": "The FreedMan Chair - A better way to sit.", "city": "London", "country": "GB", "creator": "Simon Freedman", "category": "Product Design", "backers": 1067, "Link": "https://www.kickstarter.com/projects/929020713/the-freedman-chair-a-better-way-to-sit?ref=category"}, {"goal": 100000, "pledged": 123577.99, "project name": "Bring Ai Weiwei's Tree sculptures to London's Royal Academy", "city": "London", "country": "GB", "creator": "Royal Academy of Arts", "category": "Sculpture", "backers": 1319, "Link": "https://www.kickstarter.com/projects/royalacademy/bring-ai-weiweis-tree-sculptures-to-londons-royal?ref=category"}, {"goal": 100000, "pledged": 377952.19, "project name": "Sunless Skies - the sequel to Sunless Sea", "city": "London", "country": "GB", "creator": "Failbetter Games", "category": "Video Games", "backers": 11739, "Link": "https://www.kickstarter.com/projects/failbetter/sunless-skies-the-sequel-to-sunless-sea?ref=category"}, {"goal": 100000, "pledged": 362307, "project name": "Joto - a robotic drawing board", "city": "London", "country": "GB", "creator": "Those", "category": "Hardware", "backers": 1836, "Link": "https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a?ref=category"}, {"goal": 100000, "pledged": 111563.7, "project name": "Beyond Borders - A Film Celebrating Global Diversity", "city": "London", "country": "GB", "creator": "Louis Cole", "category": "Documentary", "backers": 1666, "Link": "https://www.kickstarter.com/projects/1349068120/beyond-borders-a-film-celebrating-unity?ref=category"}, {"goal": 200000, "pledged": 208956, "project name": "Wreckfish... maybe?", "city": "Liverpool", "country": "GB", "creator": "Gary Usher", "category": "Restaurants", "backers": 1522, "Link": "https://www.kickstarter.com/projects/1357125502/wreckfish-maybe?ref=category_newest"}, {"goal": 250000, "pledged": 723390, "project name": "ZX Spectrum Next", "city": "London", "country": "GB", "creator": "Henrique Olifiers", "category": "Hardware", "backers": 3113, "Link": "https://www.kickstarter.com/projects/1835143999/zx-spectrum-next?ref=category_newest"}, {"goal": 100000, "pledged": 128961, "project name": "Codlo\u00c2\u00ae: simple & compact home sous-vide cooking", "city": "London", "country": "GB", "creator": "Grace Lee", "category": "Food", "backers": 1139, "Link": "https://www.kickstarter.com/projects/codlo/codlo-a-powerful-compact-controller-for-sous-vide?ref=category_newest"}]
-
-var succesfullData = "";
-
 fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/results.json')
   .then(response => response.json())
     .then(data => {
-     successfulData = data;
+    prepareforVis(data);
          console.log(data.length);
-    var i;
-    for( i=0;  i < data.length; i++){
-        data[i].Duration = Math.round(data[i].duration/(3600*24)) + " days"
-        data[i].Success = Math.round(data[i].pledged / (data[i].duration / (3600*24)))
-        console.log(data[i])
-    }
+    });
     // Here's a list of successful projects!
 
-});
-
-
-};
-
-    dataset2={"children":[]};
-    tableData.forEach (function(i){
-    dataset2.children.push({'Name':i["project name"],'Count':i.pledged});
-        return dataset2;
+fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/indie.json')
+  .then(response => response.json())
+    .then(data => {
+    indieData = data;
+    console.log(indieData);
+    prepareforVis(indieData);
     });
 
- dataset = {
-            "children": [{"Name":"Olives","Count":4319},
-                {"Name":"Tea","Count":4159},
-                {"Name":"Mashed Potatoes","Count":2583},
-                {"Name":"Boiled Potatoes","Count":2074},
-                {"Name":"Milk","Count":1894},
-                {"Name":"Chicken Salad","Count":1809},
-                {"Name":"Vanilla Ice Cream","Count":1713},
-                {"Name":"Cocoa","Count":1636},
-                {"Name":"Lettuce Salad","Count":1566},
-                {"Name":"Lobster Salad","Count":1511},
-                {"Name":"Chocolate","Count":1489},
-                {"Name":"Apple Pie","Count":1487},
-                {"Name":"Orange Juice","Count":1423},
-                {"Name":"American Cheese","Count":1372},
-                {"Name":"Green Peas","Count":1341},
-                {"Name":"Assorted Cakes","Count":1331},
-                {"Name":"French Fried Potatoes","Count":1328},
-                {"Name":"Potato Salad","Count":1306},
-                {"Name":"Baked Potatoes","Count":1293},
-                {"Name":"Roquefort","Count":1273},
-                {"Name":"Stewed Prunes","Count":1268}]
-        };
+
+    function prepareforVis(data){
+        dataset={"children":[]};
+        data.forEach (function(i){
+                dataset.children.push({'Name':i["project name"],'Count':i.goal,'Category':i.category});
+        return dataset;
+        });
+    
+        console.log(dataset);
+
+// dataset = {
+//            "children": [{"Name":"Olives","Count":4319},
+//                {"Name":"Tea","Count":4159},
+//                {"Name":"Mashed Potatoes","Count":2583},
+//                {"Name":"Boiled Potatoes","Count":2074},
+//                {"Name":"Milk","Count":1894},
+//                {"Name":"Chicken Salad","Count":1809},
+//                {"Name":"Vanilla Ice Cream","Count":1713},
+//                {"Name":"Cocoa","Count":1636},
+//                {"Name":"Lettuce Salad","Count":1566},
+//                {"Name":"Lobster Salad","Count":1511},
+//                {"Name":"Chocolate","Count":1489},
+//                {"Name":"Apple Pie","Count":1487},
+//                {"Name":"Orange Juice","Count":1423},
+//                {"Name":"American Cheese","Count":1372},
+//                {"Name":"Green Peas","Count":1341},
+//                {"Name":"Assorted Cakes","Count":1331},
+//                {"Name":"French Fried Potatoes","Count":1328},
+//                {"Name":"Potato Salad","Count":1306},
+//                {"Name":"Baked Potatoes","Count":1293},
+//                {"Name":"Roquefort","Count":1273},
+//                {"Name":"Stewed Prunes","Count":1268}]
+//        };
         
         var diameter = 800;
         var colour = d3.scaleOrdinal(d3.schemeCategory10);
@@ -65,11 +63,16 @@ fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/results
             .attr("height", diameter)
             .attr("class", "bubble");
 
-        var nodes = d3.hierarchy(dataset2)
+        var nodes = d3.hierarchy(dataset)
             .sum(function(d) { return d.Count; });
 
         var div = d3.select("body").append("div")	
-            .attr("class", "tooltip")				
+            .attr("class", "tooltip")
+            .style("background-color","white")
+            .style("border","2px solid black")
+
+            .style("width","250px")
+            .style("height","auto")
             .style("opacity", 0);
 
 
@@ -86,11 +89,6 @@ fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/results
             });
         
         
-        node.append("title")
-            .text(function(d) {
-                return d.data.Name + ": " + d.data.Count;
-            })
-            .attr("color","red");
 
         node.append("circle")
             .attr("r", function(d) {
@@ -104,8 +102,8 @@ fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/results
                 div.transition()		
                     .duration(200)		
                     .style("opacity", .9);
-                div	.html((d.data.Name))	
-                    .style("left", (d3.event.pageX) + "px")		
+                div	.html(("<p>Project Name: " + d.data.Name + "</br>Project funding : £" +(d.data.Count.toFixed(1).replace(/\d(?=(\d{3})+\.)/g, '$&,')) + "</br>Project Category: "+ d.data.Category + "</p>"))
+                    .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
                 })					
             .on("mouseout", function(d) {		
@@ -138,7 +136,8 @@ fetch('https://cors.io/?http://danpopoutanu.ro/Crowdfunding/website/data/results
                 return d.r/5;
             })
             .attr("fill", "white");
-
+        
+        }
 //
 //   var width = 960,
 //    height = 500,
