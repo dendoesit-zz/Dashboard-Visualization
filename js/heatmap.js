@@ -23,7 +23,6 @@ function createTabel(data, color, recreate) {
     CityList = {};
     var object = [];
     function getData(){
-        console.log(object);
         data.forEach(function(i){
             getCoords(i.city);
         })
@@ -78,20 +77,20 @@ function createTabel(data, color, recreate) {
 				  center: {lat: 51.508742, lng: -0.120850}
 				});
 			}
-			
-
 			// Construct the circle for each value in citymap.
 			// Note: We scale the area of the circle based on the population.
 			for (var i in object) {
+                
 				var city = object[i]
+                $('#list').text(city.lat , city.count)
 				// console.log(city.lat + " " + city.lng + " " + city.count)
 				// Add the circle for this city to the map.
 				var cityCircle = new google.maps.Circle({
 					strokeColor: color,
-					strokeOpacity: 0.8,
-					strokeWeight: 2,
+					strokeOpacity: 0.9,
+					strokeWeight: 1.5,
 					fillColor: color,
-					fillOpacity: 0.2,
+					fillOpacity: 0.02,
 					map: map,
 					center: new google.maps.LatLng(city.lat, city.lng),
 					radius: Math.sqrt(city.count) * 10000
@@ -112,3 +111,5 @@ $('.toggle').click(function() {
 		createTabel(successfulData, '#008000', true);
 	}
 });
+
+//$("#list").html("<h2> City List - Number of projects </h2><p>London - 12</p><p>Brighton - 2</p><p>Cambridge - 4</p><p>Manchester - 2</p><p>Dublin - 1</p>")

@@ -235,6 +235,17 @@ img{
     padding:30px;
 }
 
+#map {
+    width:70%;
+    height:600px;
+    float:left;
+}
+#list{
+    width:30%;
+    height:auto;
+    float:left;
+}
+
 
 
 
