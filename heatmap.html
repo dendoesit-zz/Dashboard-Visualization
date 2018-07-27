@@ -25,32 +25,32 @@
 
   <!-- Add your site or application content here -->
     <li><h3><a href="index.html">Project list</a></h3></li>
-    <li><h3><a href="heatmap.html">Heatmap of projects</a></h3></li>
+    <li><h3><a class="active" href="heatmap.html">Heatmap of projects</a></h3></li>
     <li><h3><a href="visualization.html">Visualization</a></h3></li>
     <li><h3><a href="entrepreneurs.html">Entrepreneurs</a></h3></li>
-    
-    <div><input type=checkbox class="toggle" id="success" value="success" checked>Succesful projects only</div>
-    <div><input type=checkbox class="toggle" id="unsuccess" checked>Unsuccesful projects only</div>
-
-    <div id="map" style="width:70%;height:600px;"></div>
-    <div id="list" style="width:30%;height:auto;">
-        <h2>City List - Projects</h2>
+    <div id="options">
+    <li><input type=checkbox class="toggle" id="success" value="success" checked>Succesful projects</li>
+    <li><input type=checkbox class="toggle" id="unsuccess" checked>Unsuccesful projects</li>
     </div>
+    <div id="map" style="width:100%;height:700px"></div>
+  <div id="title-bar"></div>
+  <div class="w3-light-grey w3-round">
+    <div class="w3-container w3-round w3-green" id="progress-bar"style="width:0%"></div>
+  </div>
 
-    
-    
-    
+
+
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
     <script src="js/vendor/jquery-ui.min.js"></script>
-    
 
 
-    
+
+
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/heatmap.js"></script>
-    
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg49guwEQaCqGe7VjgMBxs3qLmJ6jcYKQ&libraries=geometry"
     ></script>
 

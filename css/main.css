@@ -104,8 +104,8 @@ body{
 
 }
 
-#example-table , #indie-table{
-    font-size:18px;    
+#example-table , #indie-table, #entrepreneur-table{
+    font-size:18px;
 }
 
 #map{
@@ -121,17 +121,17 @@ li{
     font-size:24px;
 }
 
-div.tooltip {	
-    position: absolute;			
-    text-align: center;			
-    width: 150px;					
-    height: 100px;					
-    padding: 4px;				
-    font: 16px sans-serif;		
-    background: lightsteelblue;	
-    border: 0px;		
-    border-radius: 10px;			
-    pointer-events: none;			
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    padding: 4px;
+    font: 16px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 10px;
+    pointer-events: none;
 }
 
 a {
@@ -139,10 +139,11 @@ a {
     text-decoration:none;
     padding:20px;
 }
-a:hover{
+a:hover, a.active{
     color:dodgerblue;
     border-bottom:2px solid dodgerblue;
 }
+
 
 #modal{
      display: none; /* Hidden by default */
@@ -186,15 +187,15 @@ a:hover{
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: #000000;
     float: right;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
@@ -246,6 +247,23 @@ img{
     float:left;
 }
 
+#success , #unsuccess{
+    float:left;
+    padding:20px;
+    margin-top:3%;
+  width:25px;
+  height:25px;
+
+}
+#options{
+    margin-top:3%;
+    text-align:left;
+}
+
+
+#title-bar{
+  float:left;
+}
 
 
 

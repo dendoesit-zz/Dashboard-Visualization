@@ -12,6 +12,7 @@ fetch('https://crowdfundapi.herokuapp.com/indiegogoProjects')
     indieData = data;
     for (i in indieData){
         indieData[i].pledged= parseInt(indieData[i].goal);
+        indieData[i].link = "http://indiegogo.com/" + indieData[i].link
     }
     console.log(indieData);
     prepareforVis(indieData,"Indiegogo");
@@ -20,7 +21,7 @@ fetch('https://crowdfundapi.herokuapp.com/indiegogoProjects')
 
 function prepareforVis(data, title){
     dataset={"children":[]};
-    data.forEach (function(i){                  dataset.children.push({'Name':i["projectName"],'Count':Math.round(i.pledged),'Category':i.category});
+    data.forEach (function(i){dataset.children.push({'Name':i["projectName"],'Count':Math.round(i.pledged),'Category':i.category, 'Link':i.link});
         return dataset;
     });
 
@@ -41,18 +42,18 @@ function prepareforVis(data, title){
         .attr("height", diameter)
         .attr("class", "bubble");
     svg.append("text")
-    .attr("x", (width / 2))
-    .attr("y", height/9)
-    .attr("text-anchor", "middle")  
+    .attr("x", (width / 4))
+    .attr("y", 30)
+    .attr("text-anchor", "middle")
     .style("font-size", "30px")
     .style("color","#202e3b")
-    .text(title); 
+    .text(title);
 
 
     var nodes = d3.hierarchy(dataset)
         .sum(function(d) { return d.Count; });
 
-    var div = d3.select("body").append("div")	
+    var div = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("background-color","white")
         .style("border","2px solid black")
@@ -83,28 +84,32 @@ function prepareforVis(data, title){
         .style("fill", function(d,i) {
             return colour(i);
         })
-
-        .on("mouseover", function(d) {		
-            div.transition()		
-                .duration(200)		
+      .attr("xlink:href", function(d) {
+        return  d.data.Link;
+      })
+        .on("mouseover", function(d) {
+            div.transition()
+                .duration(200)
                 .style("opacity", .9);
             div	.html("<p>Project Name: " + d.data.Name + "</br>Project funding :" +(d.data.Count.toLocaleString('en-GB', { style: 'currency', currency: 'GBP'}).slice(0,-3)) + "</br>Project Category: "+ d.data.Category + "</p>")
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY - 28) + "px");
-            })					
-        .on("mouseout", function(d) {		
-        div.transition()		
-            .duration(500)		
-            .style("opacity", 0);	
+            })
+        .on("mouseout", function(d) {
+        div.transition()
+            .duration(500)
+            .style("opacity", 0);
         });
 
-    node.append("text")
-        .attr("dy", ".2em")
-        .style("text-anchor", "middle")
-        .text(function(d) {
-        return d.data.Name.substr(0,20);
-
+     var link = node.append("a")
+    link.attr("dy", ".2em")
+    link.style("text-anchor", "middle")
+    link.attr("xlink:href", function(d) {
+          return  d.data.Link;
         })
+
+      link.append("text")
+        .text(function(d) { return (d.data.Name.substr(0,20))})
         .attr("font-family", "sans-serif")
         .attr("font-size", function(d){
             return d.r/5;
